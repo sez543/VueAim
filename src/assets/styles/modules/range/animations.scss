@@ -1,0 +1,26 @@
+@keyframes pop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes lift {
+  0% {
+    opacity: 1;
+    padding-bottom: 0;
+  }
+  100% {
+    opacity: 0;
+    padding-bottom: 20px;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

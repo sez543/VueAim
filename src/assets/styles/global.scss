@@ -1,0 +1,40 @@
+html {
+  overflow: hidden !important;
+  font-size: 32px !important;
+}
+@function offset($i) {
+  @if ($i ==1) {
+    @return 15;
+  }
+  @if ($i ==2) {
+    @return 10;
+  }
+  @if ($i ==3) {
+    @return 4;
+  }
+}
+@for $i from 1 through 3 {
+  .crosshair_#{$i} {
+    @if $i == 2 {
+      $offset: 10;
+    }
+    @if $i == 3 {
+      $offset: 10;
+    }
+    cursor: url(./assets/media/crosshair_#{$i}.svg) offset($i) offset($i), auto !important;
+    button,
+    .v-slider,
+    .v-input__slot,
+    input,
+    .v-input--selection-controls__ripple {
+      cursor: url(./assets/media/crosshair_#{$i}.svg) offset($i) offset($i),
+        auto !important;
+    }
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", sans-serif;
+}

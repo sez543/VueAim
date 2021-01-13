@@ -1,0 +1,56 @@
+$radius: 4vh;
+$radius_precision: 1.5vh;
+.range {
+  .targets {
+    .red {
+      background-color: red;
+      &.small {
+        width: $radius / 2;
+        height: $radius / 2;
+        border-radius: $radius / 4;
+        position: relative;
+        top: $radius / 4;
+        left: $radius / 4;
+      }
+      &.large {
+        position: relative;
+        width: $radius * 3 / 2;
+        height: $radius * 3 / 2;
+        border-radius: $radius * 3 / 4;
+        top: $radius / 4;
+        left: $radius / 4;
+      }
+    }
+    .white {
+      background-color: white;
+      &.small {
+        width: $radius;
+        height: $radius;
+        border-radius: $radius / 2;
+        position: relative;
+        top: $radius / 4;
+        left: $radius / 4;
+      }
+      &.large {
+        user-select: none;
+        position: fixed;
+        width: $radius * 2;
+        height: $radius * 2;
+        border-radius: $radius;
+        animation: fade 0.5s;
+      }
+    }
+    .precision {
+      .red {
+        &.small {
+          user-select: none;
+          position: fixed !important;
+          left: unset;
+          width: $radius_precision * 2;
+          height: $radius_precision * 2;
+          border-radius: $radius_precision;
+        }
+      }
+    }
+  }
+}

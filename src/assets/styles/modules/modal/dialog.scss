@@ -1,0 +1,11 @@
+.v-dialog {
+  user-select: none;
+  padding: 20px 30px;
+  max-width: 600px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(2px);
+}

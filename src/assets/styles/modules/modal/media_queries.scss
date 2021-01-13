@@ -1,0 +1,38 @@
+@media only screen and (max-width: 700px) {
+  .field {
+    margin-top: 15px !important;
+    .v-input__slider {
+      width: 100%;
+    }
+    &:last-of-type {
+      margin-bottom: 0 !important;
+    }
+    .text {
+      font-size: 18px !important;
+    }
+    &#modes {
+      margin-top: 0 !important;
+    }
+  }
+  .button_bar {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #additional {
+    #crosshair,
+    .checkbox {
+      width: 100% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .field {
+    .text {
+      font-size: 16px !important;
+    }
+  }
+}

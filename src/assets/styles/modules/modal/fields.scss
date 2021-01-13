@@ -1,0 +1,19 @@
+.menu {
+  &:last-of-type {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .field {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &#additional {
+      text-align: center !important;
+    }
+    &#modes {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.range {
+  width: 100%;
+  height: 100%;
+  .crosses {
+    .cross {
+      position: absolute;
+      z-index: 2;
+      width: 10px;
+      opacity: 0;
+      animation: pop 1s;
+    }
+  }
+}
